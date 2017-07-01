@@ -1,0 +1,115 @@
+* {
+  box-sizing: border-box;
+}
+
+
+body {
+	font-family: 'Lato', sans-serif;	
+	line-height: 1.4;
+	margin: 0;
+}
+
+h1, header a {
+	text-transform: uppercase;
+	letter-spacing: 5px;
+	font-weight: 300;
+	color: white;
+	text-decoration: none;
+}
+
+/*only show lines when click on links*/
+header a:hover{
+	/*color: red;*/
+	/*border-bottom: 1px dotted white;*/
+	border-bottom: 1px solid white;
+}
+
+header {
+	text-align: center;
+	background-color: green;
+	background-image: url(../images/header-bg.jpg);
+	background-position: center;
+	background-size: cover;
+	padding: 30px;
+	margin-bottom: 30px;
+}
+
+header ul, footer ul{
+/*center the icons*/
+	padding: 0;
+}
+
+/*centrolize*/
+.container{
+	/*background-color: grey;*/
+	width: 1000px;
+	margin:0 auto;
+}
+
+.recipes{
+	width: 60%;
+	float: left;
+}
+
+article{
+	width: 50%;
+	float: left;
+	padding-right: 20px;
+}
+
+article img{
+	max-width: 100%;
+}
+
+.sidebar{
+	width: 40%;
+	float: right;
+	background-color: orange;
+	padding: 20px;
+	background-image: url(../images/sidebar-bg.png);
+}
+
+footer{
+	clear: both;
+	background-color: black;
+	color: white;
+	text-align: center;
+	padding: 30px;
+}
+
+
+header li, footer li{
+	display: inline;
+	margin: 10px;
+}
+
+/*size<900px, hide the sidebar*/
+@media (max-width: 600px){
+	.sidebar{
+		/*display: none;*/
+		width: 100%;
+	}
+
+	.recipes, .container{
+		width: 100%;
+	}
+}
+
+/*small size screen, eg phone, it will centerlize the article*/
+@media (max-width: 450px){
+	.container{
+		padding: 0 20px;
+	}
+	article{
+		width: 100%;
+		padding: 0;
+	}
+
+	article img{
+		width: 100%;
+	}
+}
+
+footer a{
+	text-decoration: none;
+}
